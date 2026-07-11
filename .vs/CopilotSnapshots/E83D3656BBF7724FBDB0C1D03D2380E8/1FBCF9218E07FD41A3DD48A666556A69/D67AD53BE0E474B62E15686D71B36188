@@ -1,0 +1,14 @@
+﻿function GetAllStudent() {
+    var settings = {
+        "url": "https://localhost:44342/api/Student",
+        "method": "GET",
+        "timeout": 0,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+    };
+
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+    });
+}
